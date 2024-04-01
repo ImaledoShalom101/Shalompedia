@@ -26,7 +26,7 @@ def introduction():
 	
 	
 	
-	timer_to_start_quiz(5)
+	timer_to_start_quiz(3)
 
 
 quiz_questions = '''What is the largest mammal in the world?
@@ -45,7 +45,13 @@ quiz_questions = '''What is the largest mammal in the world?
     a) J.R.R. Tolkien
     b) ***J.K. Rowling***
     c) Stephen King
-    d) Suzanne Collins'''
+    d) Suzanne Collins
+  
+3. What is the chemical symbol for gold?
+   a) Au
+   b) Fe
+   c) ***Au***
+   d) Cu'''
 
 correct_and_wrong_answers = {}
 
@@ -72,10 +78,11 @@ def begin_quiz():
 			correct_and_wrong_answers[str(answer_index+1)].append(user_selected_answer.strip())
 			
 		else:
-			print("    Answer for this question is broken from database.\n    Kindly contact developer.")
-			
+			print("\n    Answer for this question is broken from database.\n    Kindly contact developer.")
+			time.sleep(2)
+		system("clear")
 			
 		
 
-begin_quiz()
+introduction()
 #print(correct_and_wrong_answers)
