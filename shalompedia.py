@@ -5,12 +5,24 @@ print("   Hello user! What is your name?")
 
 user_name = input("    > ")
 time.sleep(.5)
-print(f"\n\nHello {user_name},\n	> Select your class")
-user_class = input("\n	" + "\n	".join(list(map(lambda one_class: f"{one_class}.  {classes[one_class]}", classes)))  + "\n\n\n	> ")
-print(f"{user_name} is in {classes[user_class.replace('.', '')]}")
+
+proceed_from_selecting_class = False
+while not proceed_from_selecting_class:
+	print(f"\n\nHello {user_name},\n	> Select your class")
+	user_class = input("\n	" + "\n	".join(list(map(lambda one_class: f"{one_class}.  {classes[one_class]}", classes)))  + "\n\n\n	> ")
+	try:
+		print(f"{user_name} is in {classes[user_class.capitalize().strip().replace('.', '')]}")
+		proceed_from_selecting_class = True
+	except KeyError as ke:
+		system("clear")
+		print("Select correctly")
+	
 time.sleep(.3)
 system("clear")
 
+
+def checking_merge():
+	print("This showed and it merged!")
 
 
 def timer_to_start_quiz(time_length):
