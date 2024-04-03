@@ -7,5 +7,5 @@ Want to know this developer more? Chat me up [on whatsapp!](https://wa.me/+23491
 1. I'm making it here.
 2. There also
 3. And after
-  + But not before
-  - And definitely not within.
+   + But not before
+   - And definitely not within.
