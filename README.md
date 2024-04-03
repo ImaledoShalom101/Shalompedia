@@ -9,6 +9,6 @@ Want to know this developer more? Chat me up [on whatsapp!](https://wa.me/+23491
 3. And after
    + But not before
    - And definitely not within.
-- [] This is the 1st.
+- [ ] This is the 1st.
 - [x] This follows as second, completed.
--[] This should not work.
+- [ ] This should not work.
