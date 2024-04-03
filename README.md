@@ -3,7 +3,7 @@
 This CLI app provides itself as a platform for students to practice general questions for enlightenment, academics, and fun!
 
 Want to know this developer more? Chat me up [on whatsapp!](https://wa.me/+2349137287950)
->Mentioning it here too.
+>>Mentioning it here too.
 1. I'm making it here.
 2. There also
 3. And after
@@ -20,5 +20,5 @@ This shouldn't have.[^2]
 
 Settled.
 
-> [!TIP]
-> And this is the iceberg.
+[!TIP]
+And this is the iceberg.
