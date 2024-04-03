@@ -20,5 +20,5 @@ This shouldn't have.[^2]
 
 Settled.
 
-[!TIP]
-And this is the iceberg.
+> [!TIP]
+>And this is the iceberg.
