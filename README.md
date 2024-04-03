@@ -16,3 +16,5 @@ Want to know this developer more? Chat me up [on whatsapp!](https://wa.me/+23491
 @ImaledoShalom101 which would you prefer? :+1:🚄
   [^1]: I'm trying to add a line break.
 [^2]: This shouldn't have.
+
+Settled.
