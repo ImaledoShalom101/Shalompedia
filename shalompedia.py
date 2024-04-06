@@ -1,5 +1,5 @@
 import time
-from os import system
+import os
 
 
 def checking_merge():
@@ -20,11 +20,11 @@ def introduction():
 			print(f"{user_name} is in {classes[user_class.capitalize().strip().replace('.', '')]}")
 			proceed_from_selecting_class = True
 		except KeyError as ke:
-			system("clear")
+			os.system("clear")
 			print("Select correctly")
 	
 	time.sleep(.5)
-	system("clear")
+	os.system("clear")
 	
 	
 	
@@ -33,7 +33,7 @@ def introduction():
 			print(f"Your questions begin in {time_length} second{'s' if time_length > 1 else ''}")
 			time_length -= 1
 			time.sleep(1)
-			system("clear")
+			os.system("clear")
 		begin_quiz()
 			
 	
@@ -70,13 +70,16 @@ correct_and_wrong_answers = {}
 
 def begin_quiz():
 	global correct_and_wrong_answers
+	progress_bar_value_total = os.get_terminal_size()[0]
+	set_of_questions = quiz_questions.split("  \n")
 	
-	for question_with_answer in quiz_questions.split("  \n"):
+	for question_with_answer in set_of_questions:
 		
 		question, options = question_with_answer.split("\n", 1)[0], question_with_answer.split("\n", 1)[1]
 		question_unnumbered = question.split(".", 1)[1].strip() if "." in question[0:3] else question
 		
 		answer_index = len(correct_and_wrong_answers)
+		print("-"*int(progress_bar_value_total*((len(correct_and_wrong_answers))/len(set_of_questions))))
 		print((f"\n{answer_index+1}. " if '***' in options else '') + question_unnumbered)
 		
 		
@@ -93,7 +96,7 @@ def begin_quiz():
 		else:
 			print("\n    Answer for this question is broken from database.\n    Kindly contact developer.")
 			time.sleep(2)
-		system("clear")
+		os.system("clear")
 			
 		
 
