@@ -1,6 +1,6 @@
 import time
 import os
-print("TEST Branch 1")
+print("TEST Branch 1 with second commit")
 
 
 def checking_merge():
